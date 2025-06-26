@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+.ipynb_checkpoints
+venv/
+env/
+.venv/
+.DS_Store
+*.log
+*.xlsx
+*.csv
+*.json
+.streamlit/config.toml
+.streamlit/secrets.toml
