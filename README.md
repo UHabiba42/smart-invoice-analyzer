@@ -59,37 +59,19 @@ LAMBDA_OCR_URL=https://your-aws-lambda-url/
 
 ---
 
-## 🚀 Run the Application
+## 📄 Detailed Docs
 
-From the project root:
+- 🔙 [Backend Documentation](backend/README.md)
+- 🔜 [Frontend Documentation](frontend/README.md)
 
-```bash
-py -3.9 -m streamlit run frontend/app.py
-```
 
-The app will open in your browser at `http://localhost:8501`.
+## Features
 
----
-
-## ✅ Features
-
-### Frontend (Streamlit)
-
-- 📸 Upload invoice/receipt image (JPG, PNG)
-- 📄 View extracted text via:
-  - AWS Lambda-based OCR
-  - Google Gemini Vision API
-- 🧠 Extract structured **key-value data** from the image
-- 💬 Ask questions (e.g., *"What is the PO number?"*) and get intelligent responses
-- 📊 View parsed data in a table
-- 📥 Export data to Excel with raw + structured sheets
-
-### Backend
-
-- Modularized for easy MLOps integration
-- Uses `google.generativeai` for OCR and QA
-- Backup fallback to `asprise` OCR API if needed
-- Excel export using `pandas` and `openpyxl`
+- Upload invoice images
+- Extract text using AWS Lambda OCR & Gemini Vision API
+- Structure key-value pairs
+- Ask invoice-based questions
+- Export data to Excel
 
 ---
 
@@ -104,9 +86,3 @@ Key packages used:
 - `google-generativeai`
 - `openpyxl`
 - `python-dotenv`
-
-Install them using:
-
-```bash
-pip install -r requirements.txt
-```
